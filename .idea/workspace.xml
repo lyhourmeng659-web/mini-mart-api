@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5376aa75-3251-4da7-81fd-7558f064e7b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mini-mart-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/file_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/file_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/pagination.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,8 @@
     <setting file="file://$PROJECT_DIR$/app/models/order.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/product.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/user.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/utils/file_handler.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/utils/validators.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/config/__init__.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/migrations/versions/e091285e744b_initial_tables.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/requirements.txt" root0="SKIP_INSPECTION" />
@@ -68,7 +69,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/User/mini-mart-api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -116,7 +117,7 @@
       <updated>1775816704534</updated>
       <workItem from="1775816717453" duration="1782000" />
       <workItem from="1775818592530" duration="15125000" />
-      <workItem from="1775891377155" duration="2260000" />
+      <workItem from="1775891377155" duration="15134000" />
     </task>
     <servers />
   </component>
