@@ -12,11 +12,11 @@ def success_response(data=None, message="Success", status_code=200):
 
 
 # Status Error 400 bad request
-def error_response(errors=None, message="An error occurred", status_code=400):
+def error_response(message="An error occurred", status_code=400, errors=None):
     response = {
         "success": False,
         "message": message,
-        "errors": errors if errors else {}
+        "data": errors if errors else {}
     }
     return jsonify(response), status_code
 

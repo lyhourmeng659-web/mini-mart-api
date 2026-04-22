@@ -14,7 +14,7 @@ def allowed_file(filename):
 
 def save_image(file):
     """Save uploaded image and return filename."""
-    if not file or not file.filename == "":
+    if not file or file.filename == "":
         return None
     if not allowed_file(file.filename):
         raise ValueError("File type is not allowed. Allowed: png, jpg, jpeg, gif, webp")
@@ -23,7 +23,6 @@ def save_image(file):
     unique_name = f"{uuid.uuid4().hex}.{ext}"
     safe_name = secure_filename(unique_name)
     upload_dir = current_app.config["UPLOAD_FOLDER"]
-    # Create folder if not exist
     os.makedirs(upload_dir, exist_ok=True)
     file.save(os.path.join(upload_dir, safe_name))
     return safe_name

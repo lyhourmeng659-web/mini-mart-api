@@ -8,7 +8,7 @@ def validate_email(email: str) -> bool:
 
 
 def validate_password(password: str) -> tuple[bool, str]:
-    if len(password < 8):
+    if len(password) < 8:
         return False, "Password must be at least 8 characters"
     if not re.search(r"[A-Za-z]", password):
         return False, "Password must contain at least one letter"

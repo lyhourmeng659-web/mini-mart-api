@@ -6,11 +6,36 @@
   <component name="ChangeListManager">
     <list default="true" id="5376aa75-3251-4da7-81fd-7558f064e7b8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/auth_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/category_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/category_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/order_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/order_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/product_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/product_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/report_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/report_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/user_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/front/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/front/auth_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/front/cart_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/front/cart_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/front/order_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/front/order_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/front/product_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/front/product_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/auth_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/auth_middleware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/cart_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/cart_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/category_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/category_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/order_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/order_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/product_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/product_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/cart_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/cart_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/category_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/category_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/order_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/order_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/product_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/product_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/report_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/report_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/user_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils/file_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/file_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/pagination.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/response.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +66,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/README.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/controllers/admin/auth_controller.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/controllers/admin/product_controller.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/controllers/admin/report_controller.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/controllers/admin/user_controller.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/middleware/auth_middleware.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/cart.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/category.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/order.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/product.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/user.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/services/report_service.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/utils/file_handler.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/utils/validators.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/config/__init__.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/gunicorn.conf.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/migrations/versions/e091285e744b_initial_tables.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/requirements.txt" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/seed.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/tests/test_api.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -90,7 +124,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -118,6 +152,21 @@
       <workItem from="1775816717453" duration="1782000" />
       <workItem from="1775818592530" duration="15125000" />
       <workItem from="1775891377155" duration="15134000" />
+      <workItem from="1775914700344" duration="243000" />
+      <workItem from="1775921260922" duration="41000" />
+      <workItem from="1776058028218" duration="1354000" />
+      <workItem from="1776144810746" duration="126000" />
+      <workItem from="1776405799517" duration="2553000" />
+      <workItem from="1776421298598" duration="25000" />
+      <workItem from="1776427306867" duration="8616000" />
+      <workItem from="1776487535555" duration="26472000" />
+      <workItem from="1776615559216" duration="880000" />
+      <workItem from="1776656692942" duration="3545000" />
+      <workItem from="1776695349567" duration="9260000" />
+      <workItem from="1776738087066" duration="23966000" />
+      <workItem from="1776827366553" duration="15449000" />
+      <workItem from="1776851218685" duration="413000" />
+      <workItem from="1776851717738" duration="7656000" />
     </task>
     <servers />
   </component>
