@@ -1,0 +1,2068 @@
+{
+  "info": {
+    "_postman_id": "f32c965a-4e8c-48d5-a6e9-276587582b76",
+    "name": "mini-mart-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48881453",
+    "_collection_link": "https://go.postman.co/collection/48881453-f32c965a-4e8c-48d5-a6e9-276587582b76?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "admin",
+      "item": [
+        {
+          "name": "user",
+          "item": [
+            {
+              "name": "get_all_users",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTAzOSwianRpIjoiOWZjMjM1ZjgtNzBlZi00YWE2LWFkMjEtNGI3YjIyNTg0M2JiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzEwMzksImNzcmYiOiI5ZDQxNDc4Yy05ZGRhLTQyYjAtYjcyNy02ODY2OGM0YzMyY2UiLCJleHAiOjE3NzY4NzQ2MzksInJvbGUiOiJhZG1pbiJ9.FKNKqmfPcfvpZ_0jA5pOfIPXaqlJlX_MaoVjwBarmSg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/users",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get_user_by_id",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTAzOSwianRpIjoiOWZjMjM1ZjgtNzBlZi00YWE2LWFkMjEtNGI3YjIyNTg0M2JiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzEwMzksImNzcmYiOiI5ZDQxNDc4Yy05ZGRhLTQyYjAtYjcyNy02ODY2OGM0YzMyY2UiLCJleHAiOjE3NzY4NzQ2MzksInJvbGUiOiJhZG1pbiJ9.FKNKqmfPcfvpZ_0jA5pOfIPXaqlJlX_MaoVjwBarmSg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/users/5",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "create_user",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTMyOCwianRpIjoiN2U4ZTkzYTEtNWQzNC00ZTJmLTk3N2ItYjkzODYwZDAzYWM1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzEzMjgsImNzcmYiOiIzNjBkYTNjNC00N2ExLTRjYTAtYTQxMC1mZGU3YzA1YjEwOGIiLCJleHAiOjE3NzY4NzQ5MjgsInJvbGUiOiJjdXN0b21lciJ9.ex2Xc34dO0hRp89Sdk5fsa-c5j3JaYlZGps0FSpaD3Q",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Kheav sarath\",\r\n    \"email\": \"Kheavsarath@gmail.com\",\r\n    \"password\": \"sarath@234\",\r\n    \"phone\": \"015430654\",\r\n    \"address\": \"Phnom Penh\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/users",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update_user",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTAzOSwianRpIjoiOWZjMjM1ZjgtNzBlZi00YWE2LWFkMjEtNGI3YjIyNTg0M2JiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzEwMzksImNzcmYiOiI5ZDQxNDc4Yy05ZGRhLTQyYjAtYjcyNy02ODY2OGM0YzMyY2UiLCJleHAiOjE3NzY4NzQ2MzksInJvbGUiOiJhZG1pbiJ9.FKNKqmfPcfvpZ_0jA5pOfIPXaqlJlX_MaoVjwBarmSg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"user_id\": 4,\r\n    \"name\": \"Meng Lyhour\",\r\n    \"email\": \"lyhourmeng123@gmail.com\",\r\n    \"phone\": \"096430654\",\r\n    \"address\": \"Kompongspue\",\r\n    \"role\": \"admin\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/users/5",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete_user",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTAzOSwianRpIjoiOWZjMjM1ZjgtNzBlZi00YWE2LWFkMjEtNGI3YjIyNTg0M2JiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzEwMzksImNzcmYiOiI5ZDQxNDc4Yy05ZGRhLTQyYjAtYjcyNy02ODY2OGM0YzMyY2UiLCJleHAiOjE3NzY4NzQ2MzksInJvbGUiOiJhZG1pbiJ9.FKNKqmfPcfvpZ_0jA5pOfIPXaqlJlX_MaoVjwBarmSg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/users/5",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "users",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "auth_admin",
+          "item": [
+            {
+              "name": "login_admin",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"email\": \"admin@minimart.com\",\r\n    \"password\": \"Admin@1234\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/auth/login",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "auth",
+                    "login"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "logout_admin",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTAzOSwianRpIjoiOWZjMjM1ZjgtNzBlZi00YWE2LWFkMjEtNGI3YjIyNTg0M2JiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzEwMzksImNzcmYiOiI5ZDQxNDc4Yy05ZGRhLTQyYjAtYjcyNy02ODY2OGM0YzMyY2UiLCJleHAiOjE3NzY4NzQ2MzksInJvbGUiOiJhZG1pbiJ9.FKNKqmfPcfvpZ_0jA5pOfIPXaqlJlX_MaoVjwBarmSg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/auth/logout",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "auth",
+                    "logout"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "category_admin",
+          "item": [
+            {
+              "name": "get_all_categories",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTU3OCwianRpIjoiY2JiNDM1N2MtNTA2Mi00NDY0LWI3ZTctMGJhZGM3NTM3MDA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzE1NzgsImNzcmYiOiJlZDBhYjJiMS1iMWQzLTRlYzQtYWEwMy01MGIzYWE2NDU5NjkiLCJleHAiOjE3NzY4NzUxNzgsInJvbGUiOiJhZG1pbiJ9.-Dt268NMZrFPE_9pS8EO-WfjTFv05emWzUbmNKWSLkQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/categories",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "categories"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get_category_by_id",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTU3OCwianRpIjoiY2JiNDM1N2MtNTA2Mi00NDY0LWI3ZTctMGJhZGM3NTM3MDA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzE1NzgsImNzcmYiOiJlZDBhYjJiMS1iMWQzLTRlYzQtYWEwMy01MGIzYWE2NDU5NjkiLCJleHAiOjE3NzY4NzUxNzgsInJvbGUiOiJhZG1pbiJ9.-Dt268NMZrFPE_9pS8EO-WfjTFv05emWzUbmNKWSLkQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/categories/9",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "categories",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "create_category",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTU3OCwianRpIjoiY2JiNDM1N2MtNTA2Mi00NDY0LWI3ZTctMGJhZGM3NTM3MDA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzE1NzgsImNzcmYiOiJlZDBhYjJiMS1iMWQzLTRlYzQtYWEwMy01MGIzYWE2NDU5NjkiLCJleHAiOjE3NzY4NzUxNzgsInJvbGUiOiJhZG1pbiJ9.-Dt268NMZrFPE_9pS8EO-WfjTFv05emWzUbmNKWSLkQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"MSI\",\r\n    \"description\": \"Gamming product\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/categories",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "categories"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update_category",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTU3OCwianRpIjoiY2JiNDM1N2MtNTA2Mi00NDY0LWI3ZTctMGJhZGM3NTM3MDA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzE1NzgsImNzcmYiOiJlZDBhYjJiMS1iMWQzLTRlYzQtYWEwMy01MGIzYWE2NDU5NjkiLCJleHAiOjE3NzY4NzUxNzgsInJvbGUiOiJhZG1pbiJ9.-Dt268NMZrFPE_9pS8EO-WfjTFv05emWzUbmNKWSLkQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"MSI Laptop\",\r\n    \"description\": \"Best of the best gamming laptop\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/categories/9",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "categories",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete_category",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MTU3OCwianRpIjoiY2JiNDM1N2MtNTA2Mi00NDY0LWI3ZTctMGJhZGM3NTM3MDA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzE1NzgsImNzcmYiOiJlZDBhYjJiMS1iMWQzLTRlYzQtYWEwMy01MGIzYWE2NDU5NjkiLCJleHAiOjE3NzY4NzUxNzgsInJvbGUiOiJhZG1pbiJ9.-Dt268NMZrFPE_9pS8EO-WfjTFv05emWzUbmNKWSLkQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/categories/9",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "categories",
+                    "9"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "product_admin",
+          "item": [
+            {
+              "name": "list_product_admin",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjExMiwianRpIjoiMjljYTIzZDQtMjAzZC00NzYyLWEzNjEtYjA0MDAzZDgyMWQwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzIxMTIsImNzcmYiOiJkOTUxMjI0ZS03NGU0LTQyNjUtYmZlNC05MzkxYjg5ZjA1MDQiLCJleHAiOjE3NzY4NzU3MTIsInJvbGUiOiJhZG1pbiJ9.fQ48mJdxpILgpCdweNpEFy-aZB1WhimTXauDWX6FE04",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/products",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get_product_admin",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjExMiwianRpIjoiMjljYTIzZDQtMjAzZC00NzYyLWEzNjEtYjA0MDAzZDgyMWQwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzIxMTIsImNzcmYiOiJkOTUxMjI0ZS03NGU0LTQyNjUtYmZlNC05MzkxYjg5ZjA1MDQiLCJleHAiOjE3NzY4NzU3MTIsInJvbGUiOiJhZG1pbiJ9.fQ48mJdxpILgpCdweNpEFy-aZB1WhimTXauDWX6FE04",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/products/28",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "products",
+                    "28"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "create_product",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjExMiwianRpIjoiMjljYTIzZDQtMjAzZC00NzYyLWEzNjEtYjA0MDAzZDgyMWQwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzIxMTIsImNzcmYiOiJkOTUxMjI0ZS03NGU0LTQyNjUtYmZlNC05MzkxYjg5ZjA1MDQiLCJleHAiOjE3NzY4NzU3MTIsInJvbGUiOiJhZG1pbiJ9.fQ48mJdxpILgpCdweNpEFy-aZB1WhimTXauDWX6FE04",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "multipart/form-data",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "multipart/form-data",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "MSI Katana",
+                      "type": "text",
+                      "uuid": "82673ce0-99a5-462b-aa63-bd0968e1a358"
+                    },
+                    {
+                      "key": "price",
+                      "value": "1000",
+                      "type": "text",
+                      "uuid": "48116a6e-9aad-470a-ad17-36a31ad180f6"
+                    },
+                    {
+                      "key": "category_id",
+                      "value": "1",
+                      "type": "text",
+                      "uuid": "3f83d153-e86b-4f86-a8a0-7b2fb123d4db"
+                    },
+                    {
+                      "key": "description",
+                      "value": "Gamming laptop",
+                      "type": "text",
+                      "uuid": "f81f3db5-7c5c-4954-a9c5-7213d491feb7"
+                    },
+                    {
+                      "key": "stock",
+                      "value": "20",
+                      "type": "text",
+                      "uuid": "32e7a15b-77d0-4d76-9513-c0bee61bca84"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "uuid": "17225288-c71c-447e-a2db-e893ce6ab50a",
+                      "src": "/C:/Users/User/Pictures/MSI1.png"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/products",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete_product",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjExMiwianRpIjoiMjljYTIzZDQtMjAzZC00NzYyLWEzNjEtYjA0MDAzZDgyMWQwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzIxMTIsImNzcmYiOiJkOTUxMjI0ZS03NGU0LTQyNjUtYmZlNC05MzkxYjg5ZjA1MDQiLCJleHAiOjE3NzY4NzU3MTIsInJvbGUiOiJhZG1pbiJ9.fQ48mJdxpILgpCdweNpEFy-aZB1WhimTXauDWX6FE04",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/products/28",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "products",
+                    "28"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update_product",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjExMiwianRpIjoiMjljYTIzZDQtMjAzZC00NzYyLWEzNjEtYjA0MDAzZDgyMWQwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzIxMTIsImNzcmYiOiJkOTUxMjI0ZS03NGU0LTQyNjUtYmZlNC05MzkxYjg5ZjA1MDQiLCJleHAiOjE3NzY4NzU3MTIsInJvbGUiOiJhZG1pbiJ9.fQ48mJdxpILgpCdweNpEFy-aZB1WhimTXauDWX6FE04",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "multipart/form-data",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "multipart/form-data",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "name",
+                      "value": "MSI Katana Updated",
+                      "type": "text",
+                      "uuid": "5f711ef8-3af6-40ab-baa7-f932776534bc"
+                    },
+                    {
+                      "key": "price",
+                      "value": "1200",
+                      "type": "text",
+                      "uuid": "58eafb7f-3580-4ffe-b99d-fa14d968e9c4"
+                    },
+                    {
+                      "key": "category_id",
+                      "value": "2",
+                      "type": "text",
+                      "uuid": "2d89c755-fae5-4684-a536-eee9b413631a"
+                    },
+                    {
+                      "key": "description",
+                      "value": "Updated description",
+                      "type": "text",
+                      "uuid": "66e1f56c-9521-431b-b7ff-2af122095fa7"
+                    },
+                    {
+                      "key": "stock",
+                      "value": "15",
+                      "type": "text",
+                      "uuid": "5a30e7ef-e386-48d2-b304-aae2dfe5105a"
+                    },
+                    {
+                      "key": "image",
+                      "type": "file",
+                      "uuid": "72117a03-ddf1-4ba9-bcfe-a16eced7aeb5",
+                      "src": "/C:/Users/User/Pictures/laptop-charger-and-adapter.png"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/products/28",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "products",
+                    "28"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "serve_upload",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "http://127.0.0.1:5000/api/uploads/8b73941c33e64c9d9d243b0bd3519435.png",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/uploads/8b73941c33e64c9d9d243b0bd3519435.png",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "uploads",
+                    "8b73941c33e64c9d9d243b0bd3519435.png"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "order_admin",
+          "item": [
+            {
+              "name": "list_orders",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjcwMiwianRpIjoiMTg5NGZkZjktNmY3ZS00YTBhLWFlZjctMDdhOTEyZjdjMWMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzI3MDIsImNzcmYiOiIxNzcxMmRjZS1jMzQ2LTQ2ZjMtOTc5NC0yNGNhM2FkYTAyNTAiLCJleHAiOjE3NzY4NzYzMDIsInJvbGUiOiJhZG1pbiJ9.S_zgov-gLdoCsC7VMIs327TE2L8ysV9c8ZYeBLRPaS8",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/orders",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "orders"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get_order",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1MzYzNCwianRpIjoiN2Y3NjIyYTItZTY3Ny00NmZjLTljZGEtMzAzNWIwZDA4ZjI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTM2MzQsImNzcmYiOiJjNDlhMDI0Zi1mMmIzLTQ5ODEtYmUxYy0wZGUzYjgwODk4MjUiLCJleHAiOjE3NzY4NTcyMzQsInJvbGUiOiJhZG1pbiJ9.E02h9tY82dGt0YMcPjwHA3Bz9K-ItOV71wjSN9cwe7E",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/orders/1/status",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "orders",
+                    "1",
+                    "status"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update_status",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1NTQ2NiwianRpIjoiMzQyOGI1M2YtMjRhYi00YzZjLWI5YWEtYWQyZGI0MTEwYWRmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTU0NjYsImNzcmYiOiJmYjFiZTU1OC03MjMwLTQ1MTYtYjA2Ni03Y2QxYjVkMWU5ZDIiLCJleHAiOjE3NzY4NTkwNjYsInJvbGUiOiJhZG1pbiJ9.NMLzYMoT6sGjru_VsD0wQATNjFQmDE8lw_tRfdrJgMI",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"status\": \"delivered\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/orders/1/status",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "orders",
+                    "1",
+                    "status"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "report",
+          "item": [
+            {
+              "name": "sales_summary",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MjcwMiwianRpIjoiMTg5NGZkZjktNmY3ZS00YTBhLWFlZjctMDdhOTEyZjdjMWMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NzI3MDIsImNzcmYiOiIxNzcxMmRjZS1jMzQ2LTQ2ZjMtOTc5NC0yNGNhM2FkYTAyNTAiLCJleHAiOjE3NzY4NzYzMDIsInJvbGUiOiJhZG1pbiJ9.S_zgov-gLdoCsC7VMIs327TE2L8ysV9c8ZYeBLRPaS8",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/reports/sales",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "reports",
+                    "sales"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "daily_sales",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1MzYzNCwianRpIjoiN2Y3NjIyYTItZTY3Ny00NmZjLTljZGEtMzAzNWIwZDA4ZjI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTM2MzQsImNzcmYiOiJjNDlhMDI0Zi1mMmIzLTQ5ODEtYmUxYy0wZGUzYjgwODk4MjUiLCJleHAiOjE3NzY4NTcyMzQsInJvbGUiOiJhZG1pbiJ9.E02h9tY82dGt0YMcPjwHA3Bz9K-ItOV71wjSN9cwe7E",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/reports/sales/daily",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "reports",
+                    "sales",
+                    "daily"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "weekly_sales",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1MzYzNCwianRpIjoiN2Y3NjIyYTItZTY3Ny00NmZjLTljZGEtMzAzNWIwZDA4ZjI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTM2MzQsImNzcmYiOiJjNDlhMDI0Zi1mMmIzLTQ5ODEtYmUxYy0wZGUzYjgwODk4MjUiLCJleHAiOjE3NzY4NTcyMzQsInJvbGUiOiJhZG1pbiJ9.E02h9tY82dGt0YMcPjwHA3Bz9K-ItOV71wjSN9cwe7E",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/reports/sales/weekly",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "reports",
+                    "sales",
+                    "weekly"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "monthly_sales",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1MzYzNCwianRpIjoiN2Y3NjIyYTItZTY3Ny00NmZjLTljZGEtMzAzNWIwZDA4ZjI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTM2MzQsImNzcmYiOiJjNDlhMDI0Zi1mMmIzLTQ5ODEtYmUxYy0wZGUzYjgwODk4MjUiLCJleHAiOjE3NzY4NTcyMzQsInJvbGUiOiJhZG1pbiJ9.E02h9tY82dGt0YMcPjwHA3Bz9K-ItOV71wjSN9cwe7E",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/reports/sales/monthly",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "reports",
+                    "sales",
+                    "monthly"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "sales_by_product",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1MzYzNCwianRpIjoiN2Y3NjIyYTItZTY3Ny00NmZjLTljZGEtMzAzNWIwZDA4ZjI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTM2MzQsImNzcmYiOiJjNDlhMDI0Zi1mMmIzLTQ5ODEtYmUxYy0wZGUzYjgwODk4MjUiLCJleHAiOjE3NzY4NTcyMzQsInJvbGUiOiJhZG1pbiJ9.E02h9tY82dGt0YMcPjwHA3Bz9K-ItOV71wjSN9cwe7E",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/reports/sales/by-product",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "reports",
+                    "sales",
+                    "by-product"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "sales_by_category",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1MzYzNCwianRpIjoiN2Y3NjIyYTItZTY3Ny00NmZjLTljZGEtMzAzNWIwZDA4ZjI5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY4NTM2MzQsImNzcmYiOiJjNDlhMDI0Zi1mMmIzLTQ5ODEtYmUxYy0wZGUzYjgwODk4MjUiLCJleHAiOjE3NzY4NTcyMzQsInJvbGUiOiJhZG1pbiJ9.E02h9tY82dGt0YMcPjwHA3Bz9K-ItOV71wjSN9cwe7E",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/admin/reports/sales/by-category",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "admin",
+                    "reports",
+                    "sales",
+                    "by-category"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "front",
+      "item": [
+        {
+          "name": "auth_customer",
+          "item": [
+            {
+              "name": "register",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Koem Sophanlanzi\",\r\n    \"email\": \"koemsophanlazi@gmail.com\",\r\n    \"password\": \"lanzi@234\",\r\n    \"phone\": \"015867563\",\r\n    \"address\": \"Phnom Penh\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/auth/register",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "auth",
+                    "register"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "login_customer",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"email\": \"koemsophanlazi@gmail.com\",\r\n    \"password\": \"lanzi@2345\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/auth/login",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "auth",
+                    "login"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "logout_customer",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDQ4NCwianRpIjoiM2U2MWI4N2UtM2M2MS00NWNhLTgwNmItNTE0OTVkZTE0MjY3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzA0ODQsImNzcmYiOiI1Njg5YzIzNy04NDRhLTQ5ZmUtYWNiMC1iMTI3ODgxOWFlMDMiLCJleHAiOjE3NzY4NzQwODQsInJvbGUiOiJjdXN0b21lciJ9.jaM8mvcY-O_I6IzKKFT7aS_ESiOJJnHzZNRPDq12aPk",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/auth/logout",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "auth",
+                    "logout"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "me",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDE5NywianRpIjoiYWFhZWJhYjAtNjllNy00YmFiLTllZWEtNmQxNWZkN2Q0NDFkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzAxOTcsImNzcmYiOiJkZTZhZmYwMy1kOTIxLTRiY2ItOTI3Yy1kMjA2ZjUwNGM4OWIiLCJleHAiOjE3NzY4NzM3OTcsInJvbGUiOiJjdXN0b21lciJ9.oVf_C2YxxjrlOjgd11a9fqzeCVCeFI5K2yWY3Y5aGLQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/auth/me",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "auth",
+                    "me"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "reset_password",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg2OTg5NywianRpIjoiYmIxMzdkYmQtZDVhYS00ZjYwLTg4NzYtOWQxMjM0MDkwMmVmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4Njk4OTcsImNzcmYiOiI3ODRhMGNjOS0wZThmLTQ3OTgtODcxZC05NDBmZTkzYjI2ZmEiLCJleHAiOjE3NzY4NzM0OTcsInJvbGUiOiJjdXN0b21lciJ9.H7FbCmiz38LxRX6cEiU_3ZBzC3Ft2HNB3DsdF-QXYQM",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"email\": \"koemsophanlazi@gmail.comm\",\r\n    \"old_password\": \"lanzi@234\",\r\n    \"new_password\": \"lanzi@2345\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/auth/reset-password",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "auth",
+                    "reset-password"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "product_customer",
+          "item": [
+            {
+              "name": "list_products",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3NjcwMzEwNSwianRpIjoiOGU0MDBkNjAtNmQ0Zi00NDI1LWFlNDYtN2Y0ZTM2NjQ4MjQ3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjUiLCJuYmYiOjE3NzY3MDMxMDUsImNzcmYiOiJmNDA2Yzc4ZC1iMzk0LTRmZGMtODc0MS1lNjk3OGFhYTU4NTkiLCJleHAiOjE3NzY3MDY3MDUsInJvbGUiOiJjdXN0b21lciJ9.w2GnbIoaQQIcXdi4we4K4sGNl_pWdTjStwpeSG-KF0A",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/products",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get_product",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3NjYxNTY4OCwianRpIjoiMmNiZDQ0ZmItMzU3OC00NmJlLWI0ZTgtMTQyZWI0Njk0MGVhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3NzY2MTU2ODgsImNzcmYiOiIxMDYyNjkxNi0yNzRiLTQ5MjEtOWViNy00YWNjOGZmMGE2MmEiLCJleHAiOjE3NzY2MTkyODgsInJvbGUiOiJhZG1pbiJ9.vvELELb_t8m1tpmCb70JseMuZhDXcfLLJ4jYgvJmCg0",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/products/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "products",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "serve_upload",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3NjgzMzY3NSwianRpIjoiOTU3MTJlNDAtMDkxOC00MzBlLTliMWItZjljODA4NTY3ZjBkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjMiLCJuYmYiOjE3NzY4MzM2NzUsImNzcmYiOiI4MzA1NWUxYi0wYTUwLTQ5NzAtODlkMS1lM2ViNWY5MzgwOTIiLCJleHAiOjE3NzY4MzcyNzUsInJvbGUiOiJjdXN0b21lciJ9.QoYiKdNjHkw7vpyiqXgqn-tkaRKVNS-OnQKKqvtSRwg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/uploads/b752f3c948ad4de9b59fea19ef85677e.png",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "uploads",
+                    "b752f3c948ad4de9b59fea19ef85677e.png"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "cart",
+          "item": [
+            {
+              "name": "get_cart",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDQ4NCwianRpIjoiM2U2MWI4N2UtM2M2MS00NWNhLTgwNmItNTE0OTVkZTE0MjY3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzA0ODQsImNzcmYiOiI1Njg5YzIzNy04NDRhLTQ5ZmUtYWNiMC1iMTI3ODgxOWFlMDMiLCJleHAiOjE3NzY4NzQwODQsInJvbGUiOiJjdXN0b21lciJ9.jaM8mvcY-O_I6IzKKFT7aS_ESiOJJnHzZNRPDq12aPk",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/cart",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "cart"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "add_to_cart",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDMyMSwianRpIjoiZDk0Y2E1NTctZjQ3NC00YmY0LWIzYTctZTg5MDY0MDIyYmRhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzAzMjEsImNzcmYiOiIwNmYzN2U4Ny05N2MwLTRmZDUtYjgyNC01YWY2MDMyMzZkNGMiLCJleHAiOjE3NzY4NzM5MjEsInJvbGUiOiJjdXN0b21lciJ9.391UKEVyffoCBqRiawjz_B8KVVhnWhqcomq7VauXlhQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"product_id\": 22,\r\n    \"quantity\": 10\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/cart/add",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "cart",
+                    "add"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "update_cart_qty",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1NDA2MSwianRpIjoiYjM0YzE2OTUtNDgxYi00ODFhLWIzYzEtZGEwOWE1MjBjNDVkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3NzY4NTQwNjEsImNzcmYiOiI2NGMyNWE3Zi00ZTI0LTRlYmQtODdhMC0zNWI5NGMyNTQ5MDAiLCJleHAiOjE3NzY4NTc2NjEsInJvbGUiOiJjdXN0b21lciJ9.RxxdDrBzBXwtpyMaXHdSOlZup9c7MxdsewBSMi75-xs",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"product_id\": 26,\r\n    \"quantity\": 5\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/cart/update",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "cart",
+                    "update"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "remove_cart_item",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1NDA2MSwianRpIjoiYjM0YzE2OTUtNDgxYi00ODFhLWIzYzEtZGEwOWE1MjBjNDVkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3NzY4NTQwNjEsImNzcmYiOiI2NGMyNWE3Zi00ZTI0LTRlYmQtODdhMC0zNWI5NGMyNTQ5MDAiLCJleHAiOjE3NzY4NTc2NjEsInJvbGUiOiJjdXN0b21lciJ9.RxxdDrBzBXwtpyMaXHdSOlZup9c7MxdsewBSMi75-xs",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/cart/remove/26",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "cart",
+                    "remove",
+                    "26"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "clear_cart_item",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg1NDA2MSwianRpIjoiYjM0YzE2OTUtNDgxYi00ODFhLWIzYzEtZGEwOWE1MjBjNDVkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjIiLCJuYmYiOjE3NzY4NTQwNjEsImNzcmYiOiI2NGMyNWE3Zi00ZTI0LTRlYmQtODdhMC0zNWI5NGMyNTQ5MDAiLCJleHAiOjE3NzY4NTc2NjEsInJvbGUiOiJjdXN0b21lciJ9.RxxdDrBzBXwtpyMaXHdSOlZup9c7MxdsewBSMi75-xs",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/cart/clear",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "cart",
+                    "clear"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "order_customer",
+          "item": [
+            {
+              "name": "checkout",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDQ4NCwianRpIjoiM2U2MWI4N2UtM2M2MS00NWNhLTgwNmItNTE0OTVkZTE0MjY3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzA0ODQsImNzcmYiOiI1Njg5YzIzNy04NDRhLTQ5ZmUtYWNiMC1iMTI3ODgxOWFlMDMiLCJleHAiOjE3NzY4NzQwODQsInJvbGUiOiJjdXN0b21lciJ9.jaM8mvcY-O_I6IzKKFT7aS_ESiOJJnHzZNRPDq12aPk",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"user_id\": 4,\r\n    \"shipping_address\": \"Phnom Penh\",\r\n    \"notes\": \"Thank you\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/orders/checkout",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "orders",
+                    "checkout"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "list_orders",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDQ4NCwianRpIjoiM2U2MWI4N2UtM2M2MS00NWNhLTgwNmItNTE0OTVkZTE0MjY3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzA0ODQsImNzcmYiOiI1Njg5YzIzNy04NDRhLTQ5ZmUtYWNiMC1iMTI3ODgxOWFlMDMiLCJleHAiOjE3NzY4NzQwODQsInJvbGUiOiJjdXN0b21lciJ9.jaM8mvcY-O_I6IzKKFT7aS_ESiOJJnHzZNRPDq12aPk",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/orders",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "orders"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "get_order",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Njg3MDY4NywianRpIjoiNmJlZmQwYjItMjA2OC00ZWZhLWIxZTctNjM1NDgyYTNiMzFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjQiLCJuYmYiOjE3NzY4NzA2ODcsImNzcmYiOiI0ZDBhNmQ4ZC05ZmMxLTRmOGYtOGYzYS1jOWQ0MjMwYWI1MDgiLCJleHAiOjE3NzY4NzQyODcsInJvbGUiOiJjdXN0b21lciJ9.RBaSMH3hCCNyUjOcy_TE7fmxsITtoNhKvr8NapGpDUA",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/orders/1",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "orders",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "category_customer",
+          "item": [
+            {
+              "name": "list_categories",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://127.0.0.1:5000/api/front/categories",
+                  "protocol": "http",
+                  "host": [
+                    "127",
+                    "0",
+                    "0",
+                    "1"
+                  ],
+                  "port": "5000",
+                  "path": [
+                    "api",
+                    "front",
+                    "categories"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/health",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "debug_paths",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/debug/paths",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "debug",
+            "paths"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
